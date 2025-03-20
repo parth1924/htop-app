@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-bol33o@n(#mjtvznj!&zk7m_i+$h8o%1v@1t)ks(n*dld3lg=0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Update ALLOWED_HOSTS to allow any host
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "htop_app",  # Add this line
 ]
 
 MIDDLEWARE = [
@@ -121,17 +123,3 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-# htop_project/htop_project/settings.py
-# Add 'htop_app' to INSTALLED_APPS
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'htop_app',  # Add this line
-]
-
-# Update ALLOWED_HOSTS to allow any host
-ALLOWED_HOSTS = ['*']

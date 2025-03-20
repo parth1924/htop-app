@@ -10,8 +10,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def htop(request):
-    # Get the full name (you should replace this with your actual name)
-    full_name = "Your Full Name"  # Replace with your name
+    
+    full_name = "Parth Chaturvedi"  
     
     # Get the system username
     username = os.getenv('USER', subprocess.getoutput('whoami'))
